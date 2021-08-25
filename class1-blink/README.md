@@ -31,6 +31,14 @@
 
 ![](images/International_Morse_Code.svg)
 
+[morse code wikipedia](https://en.wikipedia.org/wiki/Morse_code)
+
+   - dot: one time unit long
+   - dash: three time units long
+   - inter-element gap between the dits and dahs within a character: one dot duration or one unit long
+   - short gap (between letters): three time units long
+   - medium gap (between words): seven time units long
+
 ![](images/blank-ide-format.png)
 
 ![](images/find-blink.png)
