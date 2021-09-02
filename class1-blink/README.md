@@ -108,8 +108,10 @@ The lesson? The hard thing about technology is not engineering, but how our *use
  - Control motors and valves
  - Plot output of any physical measurement in real time on a computer
  - Build your own "internet of things" devices
- - 
-
+ - Build agricultural automation systems(control water valves, lights, robotic harvesters)
+ - Build art projects which integrate physical and digital media
+ - Learn and teach code in a practical way
+ 
 ![](images/blank-ide-format.png)
 
 ![](images/find-blink.png)
