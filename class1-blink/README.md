@@ -20,6 +20,36 @@ In open source software we make the source code freely available to other softwa
 
 Open hardware is a little bit more complex to replicate. Most useful products are composed of several different kinds of things, such as circuit boards, plastic enclosures, batteries, knobs and buttons.  
 
+Open source software runs the Internet: most of the infrastructure which makes individual apps work is open source software.  Open source software is created for the public good by creators who choose to share freely.  Open source hardware can change the world! If we build things out of simple and easy to use materials and share our methods with other people, we can spread what we build freely to all people!
+
+This class is itself an open source thing: a publicly available web resource at [github.com](https://github.com/LafeLabs/openarduino) has all the components of the class, along with a license granting the entire world the right to use it as they see fit.  In this class I will share with you how I develop open source hardware using the Arduino.  
+
+Open source software is also a movement, with people working for free to create things and share them for the good of all.  
+
+
+[Blender](https://www.blender.org) is a free open source software package for 3d modelling which is good enough to be used in professional projects.  
+
+![](images/blender1.png)
+
+![](images/blender2.png)
+
+### What do I do with Arduino?
+
+I use Arduino to build things out of trash which I hope to get people to copy.  I believe everything we build should be built from trash, and that the easier it is to make create new technologies, the more likely it is for this kind of thing to take off. So Arduino plays a huge role in the work I do.
+
+[Trash Robot](https://www.trashrobot.org):
+
+![](images/trashrobot.png)
+
+ - An open source robot built from the Arduino and trash, which prints art in clay.
+ - Costs about $40 to $50 to build
+ - Free open source software allows people to create their own symbol programs for the robot and share them with other people across the world
+ - The documents describing in detail how to build it and program it are integrated into a self-replicating documentation system
+
+###  Personal Computer History
+  
+It all began with just switches and blinking lights and the ability to program things!  This is what we will start with in this class.
+
 ### The Altair 8800
 
  - [wikipedia page](https://en.wikipedia.org/wiki/Altair_8800)
@@ -54,6 +84,40 @@ What is the difference from the Apple I?  Essentially building a box, and puttin
 
 The lesson? The hard thing about technology is not engineering, but how our *use* of technology connects with other humans.  
 
+## Arduino UNO
+
+ - Control blinking lights
+ - Add "shields" to do more complex tasks
+ - Connects to all platforms(windows, Apple, Linux) via standard printer cable
+ - Circuit diagram, layout, part lists, and all the code are freely available to copy
+ - Combined for profit and non profit model
+ - Named after the bar where founders spent time, in Italy(social technology creation!)
+ - Can form the basis of commercial products, with a smooth transition from very low cost prototyping to a final product which can be produced at scale
+
+![](images/uno.png)
+
+## What can we do with the Arduino?
+
+ - Sense proximity
+ - Sense motion
+ - Sense magnetic fields
+ - Detect sound
+ - Create sound
+ - Control blinking lights(our main concern here!)
+ - Be controlled with buttons and knobs
+ - Control motors and valves
+ - Plot output of any physical measurement in real time on a computer
+ - Build your own "internet of things" devices
+ - 
+
+![](images/blank-ide-format.png)
+
+![](images/find-blink.png)
+
+![](images/blink0.png)
+
+![](images/led-story.png)
+
 ![](navy-morse-image.png)
 
 [US navy light signalling in 2017 using texting](https://newatlas.com/us-navy-signal-lamps-fltc-texting/50523/)
@@ -68,12 +132,8 @@ The lesson? The hard thing about technology is not engineering, but how our *use
    - short gap (between letters): three time units long
    - medium gap (between words): seven time units long
 
-![](images/blank-ide-format.png)
+## Exercise: Social coding
 
-![](images/find-blink.png)
-
-![](images/blink0.png)
-
-![](led-story.png)
+Tell a story using Arduino code, share it with others, load someone else's story onto your Arduino and share that story.
 
 [https://raw.githubusercontent.com/LafeLabs/thing/master/minimal/github/php/replicator.txt](https://raw.githubusercontent.com/LafeLabs/thing/master/minimal/github/php/replicator.txt)
