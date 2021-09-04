@@ -42,6 +42,16 @@ Open source software is also a movement, with people working for free to create 
  - Are built on top [Git](https://git-scm.com/), which is a free and open source version control software, which can work on any computer
  - Github.com is for-profit, provides premium services for closed-source projects, while maintaining free access for open source
 
+### Open source example: this class
+
+This class is a free open source project, shared on Github, which you can copy and use to teach Arduino to others.  It is self-replicating information, in that this class teaches you to create and share the ideas of how to create more open source projects.  If you teach what you learn here, you can teach the next group of people all this as well as how to teach it and we can teach the world.
+
+This class is shared on a "public domain" license which grants all people to use it for all things for all time with no possible restrictions.  The public repository for this class is at:
+
+[https://github.com/LafeLabs/openarduino](https://github.com/LafeLabs/openarduino)
+
+This will be in active development as we go through the class, and again as we all teach future versions of the class, including other formats like one day seminars or online versions.
+
 ###  Personal Computer History
   
 It all began with just switches and blinking lights and the ability to program things!  This is what we will start with in this class.
@@ -109,19 +119,31 @@ The lesson? The hard thing about technology is not engineering, but how our *use
  - Learn and teach code in a practical way
 
 
-
 ### What do I do with Arduino?
 
-I use Arduino to build things out of trash which I hope to get people to copy.  I believe everything we build should be built from trash, and that the easier it is to make create new technologies, the more likely it is for this kind of thing to take off. So Arduino plays a huge role in the work I do.
+I use Arduino to build things out of trash which I hope to get people to copy.  I believe everything we build should be built from trash, and that the easier it is to make create new technologies, the more likely it is for this kind of thing to take off. So Arduino plays a huge role in the work I do.  I hope to share with the world, starting with you, everything I know about how to make things from Arduino and trash, and teach you how to share it as well so that we can freely replicate to the whole world.  I mostly focus on robots built from trash 
 
 [Trash Robot](https://www.trashrobot.org):
 
 ![](images/trashrobot.png)
 
+ - Mostly made of cardboard trash, plastic trash, and electronics trash(old computer DVD drives), and duct tape
  - An open source robot built from the Arduino and trash, which prints art in clay.
+ - Clay prints are themselves self-replicating media, used to make more clay coins and jewelry
  - Costs about $40 to $50 to build
  - Free open source software allows people to create their own symbol programs for the robot and share them with other people across the world
  - The documents describing in detail how to build it and program it are integrated into a self-replicating documentation system
+
+Clay pendant using Trash Robot printer:
+
+![](https://i.imgur.com/K2ZoX6G.png)
+
+Arduino generic shield, Trash Bow:
+
+![](images/trashbow.jpg)
+
+This is the basis for the work in this class, the type of "product" you will learn to build.  
+
 
 ### First Step: Plug in the Arduino, Load the IDE
  
@@ -138,7 +160,6 @@ I use Arduino to build things out of trash which I hope to get people to copy.  
 Tell a story using Arduino code, share it with others, load someone else's story onto your Arduino and share that story.
 
 ![](images/led-story.png)
-
 
 ### Morse Code:
 
