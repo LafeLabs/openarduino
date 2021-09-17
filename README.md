@@ -4,6 +4,8 @@
 
 This class is itself a self-replicating open source document.  In the class you learn how to make and share open source documents, including this one.  With the kit you received with this class you can teach your family at home or your friends at school everything in here, using this web document as your own reference when sharing.  Find someone who could benefit from Arduino and pass along what you have learned!  It is all free!
 
+[code server](codeserver/)
+
 ## Classes(1 semester, 1 day/week, 12 weeks, 8-12th grade level):
 
  - [class1-blink/](class1-blink/)

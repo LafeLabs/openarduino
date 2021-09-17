@@ -4,14 +4,19 @@
 
 ### Goals of Class 1:
 
+ - introductions!
  - learn the computer history which led to Arduino
  - learn what open source development means: code is social media
  - learn what Arduino is and get some idea of what it can do
  - download and install Arduino IDE
  - connect Arduino UNO to computer, make sure IDE can see it
- - get LED to blink
- - tell a story with a blinking light and share it
- - run someone else's story and share that(code as social media)
+ - get LED to blink, change the blink rate
+
+### Introductions
+
+### Icebreaker interlude
+
+Pitch a mad invention?
 
 ### What is Open Source?
 
@@ -89,6 +94,10 @@ It all began with just switches and blinking lights and the ability to program t
 What is the difference from the Apple I?  Essentially building a box, and putting a bunch of existing things together(drives, screens, keyboards, power supplies).  The core technology/invention was the same for these two products and yet just adding a box and putting some things together was a billion dollar product that changed the world. 
 
 The lesson? The hard thing about technology is not engineering, but how our *use* of technology connects with other humans.  
+
+Even the iphone is still an array of programmable blinking lights:
+
+![](images/iphonepixels.jpg)
 
 ## Arduino UNO
 
