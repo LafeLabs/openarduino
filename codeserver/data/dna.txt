@@ -6,7 +6,9 @@
         "fork.html",
         "index.html",
         "qrcode.html",
+        "readme.html",
         "scrolldelete.html",
+        "scrolleditor.html",
         "scrollset.html",
         "set.html"
     ],
@@ -41,17 +43,7 @@
     ],
     "maps": [],
     "scrolls": [
-        "bench",
-        "deadend",
-        "dumpster",
-        "gazebo",
         "home",
-        "manhole",
-        "pipe",
-        "pylon",
-        "questions",
-        "tree",
-        "treegrotto",
-        "woods"
+        "robot"
     ]
 }
