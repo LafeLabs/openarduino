@@ -75,6 +75,16 @@ EGO DEATH:
         }
     }
 
+    $cppfiles = scandir(getcwd()."/scrolls");
+
+    foreach($cppfiles as $value){
+        if($value[0] != "."){
+            echo "<div class = \"cpp file\">scrolls/";
+            echo $value;
+            echo "</div>\n";
+        }
+    }
+
 
     $phpfiles = scandir(getcwd()."/php");
 
@@ -219,7 +229,12 @@ for(var index = 0;index < files.length;index++){
             editor.getSession().setMode("ace/mode/python");
             document.getElementById("namediv").style.color = "#add8e6";
             document.getElementById("namediv").style.borderColor = "#add8e6";
-        }        
+        }       
+        if(this.classList[0] == "cpp"){
+            editor.getSession().setMode("ace/mode/java");
+            document.getElementById("namediv").style.color = "#add8e6";
+            document.getElementById("namediv").style.borderColor = "#add8e6";
+        }       
         if(this.classList[0] == "json"){
             editor.getSession().setMode("ace/mode/json");
             document.getElementById("namediv").style.color = "orange";
@@ -339,6 +354,9 @@ body{
     color:orange;
 }
 .python{
+    color:#add8e6;
+}
+.cpp{
     color:#add8e6;
 }
 .scrolls{
