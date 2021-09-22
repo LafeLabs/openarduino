@@ -14,6 +14,10 @@
 
 ### Introductions
 
+Dr. Lafe Spietz(he/him/his)
+
+I have been building things with Arduino for about 10 years.  I like Arduino!
+
 ### Icebreaker interlude
 
 Pitch a mad invention?
