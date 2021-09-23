@@ -1,0 +1,29 @@
+{
+    "html": [
+        "README.md",
+        "copy.html",
+        "fork.html",
+        "index.html",
+        "readme.html",
+        "scrolleditor.html",
+        "set.html"
+    ],
+    "data": [
+        "dna.txt",
+        "set.txt"
+    ],
+    "php": [
+        "copy.txt",
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "mkdir.txt",
+        "rdelete.txt",
+        "removephp.txt",
+        "replicator.txt",
+        "setreplicator.txt",
+        "text2php.txt"
+    ]
+}

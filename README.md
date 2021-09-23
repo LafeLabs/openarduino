@@ -9,7 +9,7 @@ This class is itself a self-replicating open source document.  In the class you 
 ## Classes(1 semester, 1 day/week, 12 weeks, 8-12th grade level):
 
  - [class1-blink/](class1-blink/)
- - [class2-buttons/](class2-buttons/)
+ - [class2-blinking-lights-2/](class2-blinking-lights-2/)
  - [class3-github/](class3-github/)
  - More advanced code
  - neopixels
@@ -47,8 +47,6 @@ This class is itself a self-replicating open source document.  In the class you 
 [digikey shopping cart to stuff shield](https://www.digikey.com/short/92z70jhr)
 
 [buy boards from pcbway.com](https://www.pcbway.com/project/shareproject/Generic_Trash_Robot_UNO_Shield__V5.html)
-
-
 
 grab bag:
 

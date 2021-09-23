@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP//AP///wANAP8A5Dz6ABueRwAAt/8A6BonABo86AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAREREREREREREREAAAEREREREQCIgREREd3dwAAB3d3d3d3d3d3d3d3d3d3d3d3d3VVVVVVVQAFVVAAVVVQIiBRAiIBEQIAIBECAAERAgAgFgIABmYCIiBmAiIGZgIiIGYCIgZmYCIAaIAAMzMzAAiIiIiIiIiIiIiIiIiIiIiIgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+</head>
+<body> 
+<h2>
+    <a href = "index.html">
+        home
+    </a>
+</h2>
+
+<h2>
+    <a id = "copylink" href = "copy.html">copy.php</a>
+</h2>
+
+<table>
+    <tr>
+        <td>from:</td>
+        <td><input id = "serverurlinput"/></td>
+    </tr>
+    <tr>
+        <td>to:</td>
+        <td><input id = "fileinput"/></td>
+    </tr>    
+</table>
+
+<script>
+fromname = "https://raw.githubusercontent.com/LafeLabs/bioweb/main/index.html";
+toname = "index.html";
+redraw();
+function redraw(){
+    document.getElementById("copylink").href = "copy.php?from=" + fromname + "&to=" + toname;
+    document.getElementById("copylink").innerHTML =  "copy.php?from=" + fromname +  "&to=" + toname;
+}
+
+document.getElementById("serverurlinput").value = "https://raw.githubusercontent.com/LafeLabs/bioweb/main/index.html";
+document.getElementById("fileinput").value = "index.html";
+
+document.getElementById("serverurlinput").onchange = function(){
+    fromname = this.value;
+    redraw();
+}
+document.getElementById("fileinput").onchange = function(){
+    toname = this.value;
+    redraw();
+}
+
+</script>
+<style>
+input{
+    width:30em;
+}
+</style>
+</body>
+</html>

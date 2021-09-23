@@ -20,9 +20,6 @@ Dr. Lafe Spietz(he/him/his)
 
 I have been building things with Arduino for about 10 years.  I like Arduino!  I try to make as many things from trash as I can. My goal is to try to build *everything* from trash, to push our society to end all mining and oil/gas extraction by 2050.
 
-### Demos
-
-Things I've made with Arduino:  Trash Robot, Trash Bow, Trashcore aesthetic clothes.
 
 ### Icebreaker interlude
 
@@ -174,7 +171,18 @@ This is the basis for the work in this class, the type of "product" you will lea
 
 ![](images/blink0.png)
 
-### Exercise: Social coding!
+
+### Third step: change the timing of the blinking light:
+
+![](images/led-story.png)
+
+comments are added with "//"
+
+you can tell a little story if you want.
+
+### Extra Exercise if there is extra time: Social coding!
+
+This will probably be in the next class.
 
 Tell a story using Arduino code, share it with others, load someone else's story onto your Arduino and share that story.
 
