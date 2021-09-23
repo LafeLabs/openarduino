@@ -20,8 +20,8 @@ I have been building things with Arduino for about 10 years.  I like Arduino!
 
 ### Icebreaker interlude
 
-Pitch a mad invention?
-
+Pitch a mad invention? Some sort of standard classroom ice breaker!
+  
 ### What is Open Source?
 
 In open source development we treat technology as social media.  That is, when we make a thing, we share the information which generated that thing(code, designs, instructions, descriptions) in the hopes that other people will copy the thing.  
@@ -73,9 +73,9 @@ It all began with just switches and blinking lights and the ability to program t
  - released 1976 a little over $400(a little over $2000 today)
  - sold 5000 units in the first few months!
 
-![](images/altair1.jpg)
 
-![](images/altair2.jpg)
+![](images/altair3.jpg)
+
 
 ### Apple I: 
 
