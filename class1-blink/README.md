@@ -79,6 +79,7 @@ It all began with just switches and blinking lights and the ability to program t
 
 ![](images/altair3.jpg)
 
+![](images/altair4.jpg)
 
 ### Apple I: 
 
@@ -178,11 +179,11 @@ This is the basis for the work in this class, the type of "product" you will lea
 
 comments are added with "//"
 
-you can tell a little story if you want.
+you can tell a little story if you want in the comments.
 
 ### Extra Exercise if there is extra time: Social coding!
 
-This will probably be in the next class.
+This will probably be in the next class.  We will use the geometron social code server for this.
 
 Tell a story using Arduino code, share it with others, load someone else's story onto your Arduino and share that story.
 
