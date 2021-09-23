@@ -14,9 +14,15 @@
 
 ### Introductions
 
+preferred name, pronouns, what you either like to make or want to know how to make(anything! electronics, code, art, food, crafts)
+
 Dr. Lafe Spietz(he/him/his)
 
-I have been building things with Arduino for about 10 years.  I like Arduino!
+I have been building things with Arduino for about 10 years.  I like Arduino!  I try to make as many things from trash as I can. My goal is to try to build *everything* from trash, to push our society to end all mining and oil/gas extraction by 2050.
+
+### Demos
+
+Things I've made with Arduino:  Trash Robot, Trash Bow, Trashcore aesthetic clothes.
 
 ### Icebreaker interlude
 
