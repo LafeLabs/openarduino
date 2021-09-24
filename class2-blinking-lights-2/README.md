@@ -1,10 +1,113 @@
-#   Blinking Lights 2: social coding
+[../](../)
+
+#   Blinking Lights 2: social coding, functions, for loops, variables, if statements
+
+We will blink a row of 4 LEDs and learn to use for loops, functions, if statements, variables, and how to use a code server and story telling through verbose comments for fast social coding.
+
+## 4 LED Setup
+
+Pins 8,9,10, 11 on Arduino are pins 1,2,3,4 in our labeling scheme.  Each pin goes to ground through a 330 Ohm resistor and an LED.  Longer lead is positive.  Flat on the round edge of light indicates minus side.  Minus side goes to ground, plus side goes to the resistor.  It does not matter which side of the LED the resistor goes as long as it is in series and the diode is the right way round.
+
+
 
 ![](https://i.imgur.com/vaop6ex.jpg)
 
 ![](https://i.imgur.com/kYJWsNA.jpg)
 
 ![](https://i.imgur.com/B4YPvqk.jpg)
+
+## For loops
+
+<pre>
+
+  for(int index = 0;index < 16;index++){
+    //do stuff 16 times
+  }
+
+</pre>
+
+## Functions
+
+<pre>
+
+void dit(){
+  
+  digitalWrite(pin1,HIGH);
+  digitalWrite(pin2,HIGH);
+  digitalWrite(pin3,HIGH);
+  digitalWrite(pin4,HIGH);
+  delay(timeUnit);
+  digitalWrite(pin1,LOW);
+  digitalWrite(pin2,LOW);
+  digitalWrite(pin3,LOW);
+  digitalWrite(pin4,LOW);
+  delay(timeUnit);
+    
+}
+
+</pre>
+
+
+### Morse Code:
+
+![](../class1-blink/images/navy-morse-image.png)
+
+[US navy light signalling in 2017 using texting](https://newatlas.com/us-navy-signal-lamps-fltc-texting/50523/)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/International_Morse_Code.svg/520px-International_Morse_Code.svg.png)
+
+[morse code wikipedia](https://en.wikipedia.org/wiki/Morse_code)
+
+   - dot: one time unit long
+   - dash: three time units long
+   - inter-element gap between the dits and dahs within a character: one dot duration or one unit long
+   - short gap (between letters): three time units long
+   - medium gap (between words): seven time units long
+
+## binary
+
+0:0000
+
+1:0001
+
+2:0010
+
+3:0011
+
+4:0100
+
+5:0101
+
+6:0110
+
+7:0111
+
+8:1000
+
+9:1001
+
+10:1010
+
+11:1011
+
+12:1100
+
+13:1101
+
+14:1110
+
+15:1111
+
+
+## Social Coding
+
+create your own signal, using either binary, morse code, or a system of your invention. Use a function, and/or a for loop.  
+
+Write a very very short story with flashing lights.  "help! I can only speak binary! 0,01,10,11!"
+
+Comment your story, post it to the server(link below)
+
+Copy another person's code story to your own arduino, program it, use your physical arduino to tell someone else's story to a third person(read the comments to get the story, so comments need to make sense!).  
 
 ## [codeserver/](codeserver/)
  
