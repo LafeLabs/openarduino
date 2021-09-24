@@ -1,6 +1,15 @@
-#  <span style = "color:red">B</span><span style = "color:orange">I</span><span style = "color:yellow">O</span><span style = "color:green">W</span><span style = "color:blue">E</span><span style = "color:purple">B</span>
+#   Blinking Lights 2: social coding
 
- - [http://localhost](http://localhost)
+![](https://i.imgur.com/vaop6ex.jpg)
+
+![](https://i.imgur.com/kYJWsNA.jpg)
+
+![](https://i.imgur.com/B4YPvqk.jpg)
+
+## [codeserver/](codeserver/)
+ 
+
+- [http://localhost](http://localhost)
  - [../](../)
  - [fork.html](fork.html)
  - [readme.html](readme.html)
