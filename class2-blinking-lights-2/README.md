@@ -16,6 +16,8 @@ Pins 8,9,10, 11 on Arduino are pins 1,2,3,4 in our labeling scheme.  Each pin go
 
 ![](https://i.imgur.com/B4YPvqk.jpg)
 
+[blink all 4 lights](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/blink4.ino)
+
 ## For loops
 
 <pre>
@@ -46,6 +48,15 @@ void dit(){
 }
 
 </pre>
+
+[led cycle](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/ledcycle.ino)
+
+[SOS](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/sos4leds.ino)
+
+[binary counter](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/binary.ino)
+
+[Morse code function](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/morsecodefunction.ino)
+
 
 
 ### Morse Code:

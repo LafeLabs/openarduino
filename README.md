@@ -1,4 +1,4 @@
-# Open Arduino
+# [Open Arduino](https://github.com/LafeLabs/openarduino)
 
 ## Open Source Hardware Development with Arduino
 
