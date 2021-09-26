@@ -1,5 +1,7 @@
 [../](../)
 
+[codeserver/](codeserver/)
+
 #   Blinking Lights 2: social coding, functions, for loops, variables, if statements
 
 We will blink a row of 4 LEDs and learn to use for loops, functions, if statements, variables, and how to use a code server and story telling through verbose comments for fast social coding.

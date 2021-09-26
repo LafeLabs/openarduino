@@ -10,8 +10,8 @@ This class is itself a self-replicating open source document.  In the class you 
 
  - [class1-blink/](class1-blink/)
  - [class2-blinking-lights-2/](class2-blinking-lights-2/)
- - [class3-github/](class3-github/)
- - More advanced code
+ - buttons, knobs, serial, PWM, motor speed control
+ - sensors, science with the arduino
  - neopixels
  - robotics and motor controllers
  - sensors
