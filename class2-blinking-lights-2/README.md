@@ -11,7 +11,6 @@ We will blink a row of 4 LEDs and learn to use for loops, functions, if statemen
 Pins 8,9,10, 11 on Arduino are pins 1,2,3,4 in our labeling scheme.  Each pin goes to ground through a 330 Ohm resistor and an LED.  Longer lead is positive.  Flat on the round edge of light indicates minus side.  Minus side goes to ground, plus side goes to the resistor.  It does not matter which side of the LED the resistor goes as long as it is in series and the diode is the right way round.
 
 
-
 ![](https://i.imgur.com/vaop6ex.jpg)
 
 ![](https://i.imgur.com/kYJWsNA.jpg)
@@ -19,6 +18,11 @@ Pins 8,9,10, 11 on Arduino are pins 1,2,3,4 in our labeling scheme.  Each pin go
 ![](https://i.imgur.com/B4YPvqk.jpg)
 
 [blink all 4 lights](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/blink4.ino)
+
+[cycle through the lights](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/ledcycle.ino)
+
+[flash all four lights with SOS](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/sos4leds.ino)
+
 
 ## For loops
 
@@ -29,6 +33,9 @@ Pins 8,9,10, 11 on Arduino are pins 1,2,3,4 in our labeling scheme.  Each pin go
   }
 
 </pre>
+
+[binary counter](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/binary.ino)
+
 
 ## Functions
 
@@ -50,12 +57,6 @@ void dit(){
 }
 
 </pre>
-
-[led cycle](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/ledcycle.ino)
-
-[SOS](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/sos4leds.ino)
-
-[binary counter](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/binary.ino)
 
 [Morse code function](https://github.com/LafeLabs/openarduino/blob/main/class2-blinking-lights-2/codeserver/code/morsecodefunction.ino)
 
@@ -114,7 +115,16 @@ void dit(){
 
 ## Social Coding
 
-create your own signal, using either binary, morse code, or a system of your invention. Use a function, and/or a for loop.  
+[Exquisite corpse](https://en.wikipedia.org/wiki/Exquisite_corpse)
+
+ Created by 1920s French surrealists.  Absurd game of collaborative creativity.
+
+
+1. create the shortest possible story using Morse Code in a little function which calls the morse code function.  
+2. call that function in loop(), add a comment into loop() which describes what is happening with the Morse
+3. post your program to the code server
+4. the next person builds on that using their own function and adds their function to yours in loop()
+5. we collectively build a story all around the room
 
 Write a very very short story with flashing lights.  "help! I can only speak binary! 0,01,10,11!"
 
