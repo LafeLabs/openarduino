@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAABEAERABEAAAEQABAAEQAAAAEAEAEAAAAAABAQEAAAAAEAAREAEAAAERERERERAAABAAERABAAAAAAEBAQAAAAAAEAEAEAAAABEAAQABEAAAEQABAAEQAAAAABEQAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+
+    <!--Stop Google:-->
+    <META NAME="robots" CONTENT="noindex,nofollow">
+</head>
+<body>    
+<a href = "readme.html">README.md</a>
+
+<table id = "buttontable">
+    <tr>
+        <td class = "button" id = "herebutton">THIS SERVER</td>
+        <td class = "button" id ="importbutton">IMPORT</td>
+        <td class = "button" id = "resetbutton">RESET</td>
+    </tr>
+</table>
+    
+<table id = "inputtable">
+    <tr>
+        <td style = "text-align:right">SERVER:</td>
+        <td><input id = "serverinput"/></td>
+    </tr>
+</table>
+
+    <textarea id = "textio"></textarea>
+    <h1>CODE SET REPLICATOR</h1>
+<a href = "codesetreplicator.php">codesetreplicator.php</a>
+
+<script>
+
+document.getElementById("serverinput").value = "";
+
+scrollset0 = {
+    "server":"https://raw.githubusercontent.com/LafeLabs/codeserver/main/",
+    "code":[
+        "plot1.py"
+    ]
+};
+codeset = JSON.parse(JSON.stringify(scrollset0));
+
+code = [];
+
+var httpc = new XMLHttpRequest();
+    httpc.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var localscrollset = JSON.parse(this.responseText);
+        codeset.server = localscrollset.server;
+        if(codeset.server.charAt(codeset.server.length-1) != "/"){
+            codeset.server = codeset.server + "/"; 
+        }
+        document.getElementById("serverinput").value = codeset.server;
+        var httpc9 = new XMLHttpRequest();
+        httpc9.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                code = JSON.parse(this.responseText);
+                codeset.code = code;
+                document.getElementById("textio").value = JSON.stringify(codeset.code,null,"    ");
+                savejson();
+            };
+        }
+        
+        httpc9.open("GET", "dir.php?filename=code", true);
+        httpc9.send();
+
+    }
+};
+httpc.open("GET", "fileloader.php?filename=data/codeset.txt", true);
+httpc.send();
+
+
+document.getElementById("importbutton").onclick = function(){
+    codeset.code = JSON.parse(document.getElementById("textio").value);
+    savejson();
+}
+
+
+document.getElementById("serverinput").onchange = function(){
+    codeset.server = this.value;
+    if(codeset.server.charAt(codeset.server.length-1) != "/"){
+        codeset.server = codeset.server + "/"; 
+    }
+    savejson();
+}
+
+function savejson(){
+    var url = "filesaver.php";        
+    var httpc2 = new XMLHttpRequest();
+    httpc2.open("POST", url, true);
+    httpc2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    httpc2.send("data="+encodeURIComponent(JSON.stringify(codeset,null,"    "))+"&filename=data/codeset.txt");//send text to filesaver.php
+}
+
+
+document.getElementById("resetbutton").onclick = function(){
+    codeset = JSON.parse(JSON.stringify(codeset0));
+    document.getElementById("serverinput").value = codeset.server;
+    document.getElementById("textio").value = JSON.stringify(codeset.code,null,"    ");
+    savejson();
+}
+
+document.getElementById("herebutton").onclick = function(){
+    var localurl = window.location.href.split("codeset.html")[0];
+    codeset.server = localurl;
+    document.getElementById("serverinput").value = codeset.server;
+    savejson();
+}
+
+
+</script>
+<style>
+#buttontable{
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+#buttontable td{
+    width:12em;
+    text-align:center;
+}
+#inputtable{
+    position:absolute;
+    bottom:1em;
+    left:1em;
+}
+#inputtable table{
+    width:80%;
+}
+#inputtable tr{
+    width:100%;
+}
+
+#textio{
+    position:absolute;
+    right:1px;
+    top:2em;
+    height:80%;
+    width:40%;
+}
+#feed{
+    position:absolute;
+    top:50%;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    overflow:scroll;
+}
+#serverinput{
+    width:100%;
+}
+body,div,textarea,input{
+    font-family:courier;
+    background-color:black;
+    color:#00ff00;
+    font-size:24px;
+    border-color:#00ff00;
+}
+a{
+    font-family:courier;
+    background-color:black;
+    font-size:24px;
+    border-color:#00ff00;
+    color:#ff2cb4;
+}
+
+.button{
+    cursor:pointer;
+    border:solid;
+}
+.button:hover{
+    background-color:#00ff0080;
+}
+.button:active{
+    background-color:#ffff0080;
+}
+.box img{
+    width:3em;
+}
+</style>
+</body>
+</html>
