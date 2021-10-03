@@ -8,18 +8,19 @@ This class is itself a self-replicating open source document.  In the class you 
 
 ## Classes(1 semester, 1 day/week, 12 weeks, 8-12th grade level):
 
- - [class1-blink/](class1-blink/)
- - [class2-blinking-lights-2/](class2-blinking-lights-2/)
- - [buttons, knobs, serial, digital input/output](class3-buttons-knobs-io/)
- - sensors, science with the arduino
- - neopixels
- - robotics and motor controllers
- - sensors
- - connecting the dots: sensors, neopixels, buttons, knobs
- - full product: examples and suggestions
- - final project 1
- - final project 2
- - final project 3 
+ - [class 1: blink/](class1-blink/)
+ - [class 2: blinking-lights-2/](class2-blinking-lights-2/)
+ - [class 3: buttons, knobs, serial, digital input/output](class3-buttons-knobs-io/)
+ - class 4 sensors, science with the arduino
+ - class 5 neopixels
+ - class 6 robotics and motor controllers
+ - 7 connecting the dots: sensors, neopixels, buttons, knobs, begin product creation process
+ - 8 some trash assembly methods, further product discussion
+ - 9 build teams, make designs
+ - 10 prototype/build/test
+ - 11 prototype/build/test
+ - 12 prototype/build/test
+
 
 ## Materials:
 
