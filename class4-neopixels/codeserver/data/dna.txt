@@ -1,0 +1,46 @@
+{
+    "html": [
+        "README.md",
+        "codedelete.html",
+        "codeset.html",
+        "fork.html",
+        "index.html",
+        "qrcode.html",
+        "rawtext.html",
+        "readme.html",
+        "scrolleditor.html"
+    ],
+    "data": [
+        "codeset.txt",
+        "dna.txt"
+    ],
+    "iconsymbols": [
+        "delete.svg",
+        "edit.svg",
+        "home.svg",
+        "lightdark.svg",
+        "scroll.svg"
+    ],
+    "php": [
+        "codesetreplicator.txt",
+        "copy.txt",
+        "deletefile.txt",
+        "dir.txt",
+        "dnagenerator.txt",
+        "editor.txt",
+        "fileloader.txt",
+        "filesaver.txt",
+        "ipaddress.txt",
+        "mkdir.txt",
+        "rdelete.txt",
+        "replicator.txt",
+        "text2php.txt"
+    ],
+    "code": [
+        "hello.py",
+        "index.html",
+        "plot1.py",
+        "sketch.js",
+        "slimezistor.ino"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "server": "http://localhost/",
+    "code": [
+        "hello.py",
+        "index.html",
+        "plot1.py",
+        "sketch.js",
+        "slimezistor.ino"
+    ]
+}

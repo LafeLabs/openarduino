@@ -11,8 +11,8 @@ This class is itself a self-replicating open source document.  In the class you 
  - [class 1: blink/](class1-blink/)
  - [class 2: blinking-lights-2/](class2-blinking-lights-2/)
  - [class 3: buttons, knobs, serial, digital input/output](class3-buttons-knobs-io/)
- - class 4 sensors, science with the arduino
- - class 5 neopixels
+ - [class 4: neopixels](class4-neopixels/)
+ - class 5: sensors
  - class 6 robotics and motor controllers
  - 7 connecting the dots: sensors, neopixels, buttons, knobs, begin product creation process
  - 8 some trash assembly methods, further product discussion
