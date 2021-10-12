@@ -5,6 +5,7 @@
         "pixelknob.ino",
         "redcycle.ino",
         "rgbcycle.ino",
+        "serialpixel.ino",
         "strandtest.ino"
     ]
 }
