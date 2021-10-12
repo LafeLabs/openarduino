@@ -1,11 +1,10 @@
 {
     "server": "http://localhost/",
     "code": [
-        "hello.py",
-        "index.html",
-        "plot1.py",
-        "sketch.html",
-        "sketch.js",
-        "slimezistor.ino"
+        "pixel.ino",
+        "pixelknob.ino",
+        "redcycle.ino",
+        "rgbcycle.ino",
+        "strandtest.ino"
     ]
 }
