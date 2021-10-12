@@ -29,7 +29,5 @@ a{
 body{
     font-size:1em;
     font-family:courier;
-    color:#00ff00;
-    background-color:black;
 }
 </style>

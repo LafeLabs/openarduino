@@ -1,68 +1,87 @@
+<!doctype html>
 <html>
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>    
-    <script src="sketch.js"></script>
+    <meta charset="utf-8">
   </head>
   <body>
-    <main id = "main">
-    </main>
-    <div id  = "linkscroll">
-        <div id = "qrcode"></div>
-        <ul>
-            <li>
-                 <a href = "../readme.html">../readme.html</a>        
-            </li>
-            <li>
-                 <a href = "../">up to code editor</a>        
-            </li>
-        </ul>
-    </div>
-    <script>
-        if(innerWidth > innerHeight){
-            document.getElementById("linkscroll").style.width = (innerWidth - innerHeight).toString() + "px";
-            document.getElementById("linkscroll").style.left = (innerHeight + 20).toString() + "px";
-            document.getElementById("linkscroll").style.top = (0).toString() + "px";
-            
-        }
-        else{
-            document.getElementById("linkscroll").style.width = (innerWidth).toString() + "px";
-            document.getElementById("linkscroll").style.left = (30).toString() + "px";
-            document.getElementById("linkscroll").style.top = (innerWidth + 20).toString() + "px";
-        }
-        codesquaresize = 100;
-        //globalurl = "http://www.trashrobot.org/qrcode.html";
-        globalurl = window.location.href;
-        
-        qrcode = new QRCode(document.getElementById("qrcode"), {
-        	text: globalurl,
-        	width: codesquaresize,
-        	height: codesquaresize,
-        	colorDark : "#000000",
-        	colorLight : "#ffffff",
-        	correctLevel : QRCode.CorrectLevel.H
-        });
-            
-        qrcode.makeCode(globalurl);
+      <h1>biggest heading size</h1>
+      <h2>next biggest heading size</h2>
+      <a href = "../../">a stands for "anchor" which means hyperlink</a>
+      <div>division, just a box with no specific properties, displayed "block" by default</div>
+      <span>like a "div", but inline(no newline)</span>
+      <a href = "../">
+          <img src = "../iconsymbols/edit.svg" alt "alt text describes image"/>
+      </a>
+<ul>
+    <li>un-ordered list item 1</li>
+    <li>un-ordered list item 2</li>
+</ul>      
+<ol>
+    <li>ordered list item 1</li>
+    <li>ordered list item 2</li>
+</ol>      
+<pre>
+    //here we put code-looking things 
+    void loop(){
+      supid.c.derived.language();
+      break;
+    }
+</pre>
+<br>
+break with br manually
+<p>
+    paragraph is p.  somewhat anachronistic.
+</p>
+<textarea></textarea>
+<input/>
+<table>
+    <tr>
+        <td>element11</td>
+        <td>element12</td>
+    </tr>
+    <tr>
+        <td>element21</td>
+        <td>element22</td>
+    </tr>
+</table>
 
+<h4>hexidecimal value of UNICODE, ACE OF SPADES:</h4>
+<span style  = "font-size:4em">&#x2660;A</span>
+<span style  = "font-size:4em;transform:rotate(180deg);position:absolute">&#x2660;A</span>
+
+<h4>base 10 smiling poop emoji UNICODE:</h4>
+<span style = "font-size:4em">&#128169;</span>
+
+<ul style = "font-size:4em">
+    <li>
+        <a href = "sketch.html">sketch.html</a>
+    </li>
+    <li>
+        <a href = "../">../</a>
+    </li>
+    <li>
+        <a href = "../../">../../</a>
+    </li>
+    <li>
+        <a href = "readme.html">readme.html</a>
+    </li>
+</ul>
+
+    <script>
+    //javascript goes in scripts
+    console.log("print this on console, you can see using developer mode on your browser");
     </script>
     <style>
-        body{
-            background-color:#e0e0e0;
-            overflow:hidden;
-        }
-        #linkscroll{
-            position:absolute;
-            right:10px;
-            bottom:10px;
-            overflow:scroll;
-            border-left:solid;
-            background-color:#a0a0a0;
-        }
+        /*
+        "style" contains CSS code to decide how things look
+        this turns links(anchors) a color
+        */
         a{
-            color:#2020ff;
-            font-size:2em;
+            color:purple;
         }
-    </style>
+        td,tr,table{
+            border:solid;
+        }
+      </style>
   </body>
 </html>

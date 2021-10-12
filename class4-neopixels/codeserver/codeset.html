@@ -9,76 +9,83 @@
     <META NAME="robots" CONTENT="noindex,nofollow">
 </head>
 <body>    
-<a href = "readme.html">README.md</a>
-
-<table id = "buttontable">
+<table id = "toptable">
     <tr>
-        <td class = "button" id = "herebutton">THIS SERVER</td>
-        <td class = "button" id ="importbutton">IMPORT</td>
-        <td class = "button" id = "resetbutton">RESET</td>
+        <td>
+            <a href = "index.html">
+                <img src = "iconsymbols/home.svg"/>
+            </a>
+        </td>
+        <td>
+            <a href = "readme.html">
+                <img src = "iconsymbols/scroll.svg"/>
+            </a>
+        </td>
+        <td>
+            <a href = "fork.html">
+                <img src = "iconsymbols/fork.svg"/>
+            </a>
+        </td>
     </tr>
 </table>
-    
-<table id = "inputtable">
+<table>
     <tr>
-        <td style = "text-align:right">SERVER:</td>
-        <td><input id = "serverinput"/></td>
+        <td style = "text-align:right">SOURCE SERVER:</td>
+        <td>
+            <input id = "sourceinput"/>
+        </td>
     </tr>
+    <tr>
+        <td style = "text-align:right">THIS SERVER HERE:</td>
+        <td>
+            <input id = "hereinput"/>
+        </td>
+    </tr>
+
 </table>
 
-    <textarea id = "textio"></textarea>
-    <h1>CODE SET REPLICATOR</h1>
-<a href = "codesetreplicator.php">codesetreplicator.php</a>
 
+<a href = "codesetreplicator.php" id = "fetchlink">
+(!)CLICK TO FETCH SET FROM SOURCE TO HERE(!)
+</a>
+
+<textarea id  = "textio"></textarea>
 <script>
 
-document.getElementById("serverinput").value = "";
+var localurl = window.location.href.split("codeset.html")[0];
+document.getElementById("hereinput").value = localurl;
 
-scrollset0 = {
-    "server":"https://raw.githubusercontent.com/LafeLabs/codeserver/main/",
-    "code":[
-        "plot1.py"
-    ]
-};
-codeset = JSON.parse(JSON.stringify(scrollset0));
-
-code = [];
+codeset = {};
 
 var httpc = new XMLHttpRequest();
     httpc.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        var localscrollset = JSON.parse(this.responseText);
-        codeset.server = localscrollset.server;
+        codeset = JSON.parse(this.responseText);
         if(codeset.server.charAt(codeset.server.length-1) != "/"){
             codeset.server = codeset.server + "/"; 
         }
-        document.getElementById("serverinput").value = codeset.server;
+        document.getElementById("sourceinput").value = codeset.server;
         var httpc9 = new XMLHttpRequest();
         httpc9.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
+
                 code = JSON.parse(this.responseText);
                 codeset.code = code;
                 document.getElementById("textio").value = JSON.stringify(codeset.code,null,"    ");
                 savejson();
+
             };
         }
         
         httpc9.open("GET", "dir.php?filename=code", true);
         httpc9.send();
-
+        
     }
 };
 httpc.open("GET", "fileloader.php?filename=data/codeset.txt", true);
 httpc.send();
 
-
-document.getElementById("importbutton").onclick = function(){
-    codeset.code = JSON.parse(document.getElementById("textio").value);
-    savejson();
-}
-
-
-document.getElementById("serverinput").onchange = function(){
+document.getElementById("sourceinput").onchange = function(){
     codeset.server = this.value;
     if(codeset.server.charAt(codeset.server.length-1) != "/"){
         codeset.server = codeset.server + "/"; 
@@ -95,23 +102,13 @@ function savejson(){
 }
 
 
-document.getElementById("resetbutton").onclick = function(){
-    codeset = JSON.parse(JSON.stringify(codeset0));
-    document.getElementById("serverinput").value = codeset.server;
-    document.getElementById("textio").value = JSON.stringify(codeset.code,null,"    ");
-    savejson();
-}
-
-document.getElementById("herebutton").onclick = function(){
-    var localurl = window.location.href.split("codeset.html")[0];
-    codeset.server = localurl;
-    document.getElementById("serverinput").value = codeset.server;
-    savejson();
-}
-
 
 </script>
 <style>
+#toptable{
+    background-color:#808080;
+}
+
 #buttontable{
     position:absolute;
     right:0px;
@@ -153,17 +150,13 @@ document.getElementById("herebutton").onclick = function(){
 }
 body,div,textarea,input{
     font-family:courier;
-    background-color:black;
-    color:#00ff00;
+    background-color:#808080;
     font-size:24px;
-    border-color:#00ff00;
+    border-color:black;
 }
 a{
     font-family:courier;
-    background-color:black;
     font-size:24px;
-    border-color:#00ff00;
-    color:#ff2cb4;
 }
 
 .button{
