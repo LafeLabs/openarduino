@@ -2,6 +2,17 @@
 
 ## [codeserver/](codeserver/)
 
+[Lafe's Home Raspberry Pi code server(temporary link)](http://vineotron.net/neopixel/)
+
+Programs to copy:
+
+ - [codeserver/code/strandtest.ino](codeserver/code/strandtest.ino)
+ - [codeserver/code/redcycle.ino](codeserver/code/redcycle.ino)
+ - [codeserver/code/rgbcycle.ino](codeserver/code/rgbcycle.ino)
+ - [codeserver/code/pixel.ino](codeserver/code/pixel.ino)
+ - [codeserver/code/pixelknob.ino](codeserver/code/pixelknob.ino)
+ - [codeserver/code/serialpixel.ino](codeserver/code/serialpixel.ino)
+
 #  [Class 4: Neopixels](https://github.com/LafeLabs/openarduino/blob/main/class4-neopixels/README.md)
 
 Neopixels are programmable LED chips with full red/green/blue control of color.  They come in strips in all shapes and sizes, and can be programmed from Arduino using a collection of libraries from Adafruit.  They are a generic chip, the WS2812, packaged and made easy to use by Adafruit.  
