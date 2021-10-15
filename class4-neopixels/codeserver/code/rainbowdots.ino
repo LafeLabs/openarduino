@@ -25,11 +25,13 @@
 int r = 0;
 int g = 100;
 int b = 200;
-int pixel = 1;//1 through 8, 
-/*
- * ignore zero because zero's are 
- * constantly sent down line for no apparent reason
-*/
+
+int r2 = 200;
+int g2= 100;
+int b2 = 0;
+
+int pixel = 0;//0 through 7
+int pixel2 = 7; 
 
 int knob = 0;
 int wait= 50;
@@ -55,7 +57,6 @@ void setup() {
   clock_prescale_set(clock_div_1);
 #endif
   // END of Trinket-specific code.
-  Serial.begin(9600);
 
   strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
   strip.show();            // Turn OFF all pixels ASAP
@@ -67,23 +68,87 @@ void setup() {
 
 void loop() {
 
-  uint32_t color = strip.Color(r,g,b);
+  uint32_t color1 = strip.Color(r,g,b);
+  uint32_t color2 = strip.Color(r2,g2,b2);
 
-  if (Serial.available() > 0) {
-    // get incoming byte:
-    pixel = Serial.parseInt();
+  knob = analogRead(A2);
+  if(knob > 0 && knob < 128){
+    pixel = 0;
+    pixel2 = 7; 
   }
-  if(pixel>0){
-    for(int i=0; i<strip.numPixels(); i++) { // For each pixel in strip...
-      if(i == pixel-1){
-        strip.setPixelColor(i, color);         //  Set pixel's color (in RAM)
-      }
-      else{
-        strip.setPixelColor(i, strip.Color(0,0,0));         //  Set pixel's color (in RAM) 
-      }
-      strip.show();                          //  Update strip to match
-    }    
+  if(knob > 128 && knob < 2*128){
+    pixel = 1;
+    pixel2 = 6;
+  }
+  if(knob > 2*128 && knob < 3*128){
+    pixel = 2;
+    pixel2 = 5;
+  }
+  if(knob > 3*128 && knob < 4*128){
+    pixel = 3;
+    pixel2 = 4;
+  }
+  if(knob > 4*128 && knob < 5*128){
+    pixel = 4;
+    pixel2 = 3;
+  }
+  if(knob > 5*128 && knob < 6*128){
+    pixel = 5;
+    pixel2 = 2;
+  }
+  if(knob > 6*128 && knob < 7*128){
+    pixel = 6;
+    pixel2 = 1;
+  }
+  if(knob > 7*128){
+    pixel = 7;
+    pixel2 = 0;
+  }
+
+  for(int i=0; i<strip.numPixels(); i++) { // For each pixel in strip...
+    if(i == pixel){
+      strip.setPixelColor(i, color1);         //  Set pixel's color (in RAM)
+    }
+    else{
+      strip.setPixelColor(i, strip.Color(0,0,0));         //  Set pixel's color (in RAM) 
+    }
+    strip.show();                          //  Update strip to match
+  }
+
+  for(int i=0; i<strip.numPixels(); i++) { // For each pixel in strip...
+    if(i == pixel2){
+      strip.setPixelColor(i, color2);         //  Set pixel's color (in RAM)
+    }
+    else{
+      strip.setPixelColor(i, strip.Color(0,0,0));         //  Set pixel's color (in RAM) 
+    }
+    strip.show();                          //  Update strip to match
   }
   
+    r++;
+    g++;
+    b++;
+  if(r > 255){
+    r = 0;
+  }
+  if(g > 255){
+    g = 0;
+  }
+  if(b > 255){
+    b = 0;
+  }
+  
+    r2++;
+    g2++;
+    b2++;
+  if(r2 > 255){
+    r2 = 0;
+  }
+  if(g2 > 255){
+    g2 = 0;
+  }
+  if(b2 > 255){
+    b2 = 0;
+  }
 //  delay(10);
 }

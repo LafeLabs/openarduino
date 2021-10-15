@@ -1,6 +1,8 @@
 {
-    "server": "http://localhost/",
+    "server": "http://10.0.0.26/neopixel/",
     "code": [
+        "hello.py",
+        "newthing.ino",
         "pixel.ino",
         "pixelknob.ino",
         "redcycle.ino",

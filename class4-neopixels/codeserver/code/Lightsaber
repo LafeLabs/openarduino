@@ -1,3 +1,5 @@
+Lightsaber
+
 // A basic everyday NeoPixel strip test program.
 
 // NEOPIXEL BEST PRACTICES for most reliable operation:
@@ -22,18 +24,7 @@
 // How many NeoPixels are attached to the Arduino?
 #define LED_COUNT 8
 
-int r = 0;
-int g = 100;
-int b = 200;
-int pixel = 1;//1 through 8, 
-/*
- * ignore zero because zero's are 
- * constantly sent down line for no apparent reason
-*/
-
-int knob = 0;
-int wait= 50;
-
+#define BUTTON_PIN   2
 // Declare our NeoPixel strip object:
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 // Argument 1 = Number of pixels in NeoPixel strip
@@ -55,7 +46,7 @@ void setup() {
   clock_prescale_set(clock_div_1);
 #endif
   // END of Trinket-specific code.
-  Serial.begin(9600);
+pinMode(BUTTON_PIN, INPUT_PULLUP);
 
   strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
   strip.show();            // Turn OFF all pixels ASAP
@@ -66,24 +57,26 @@ void setup() {
 // loop() function -- runs repeatedly as long as board is on ---------------
 
 void loop() {
-
-  uint32_t color = strip.Color(r,g,b);
-
-  if (Serial.available() > 0) {
-    // get incoming byte:
-    pixel = Serial.parseInt();
+//   Fill along the length of the strip in various colors...
+  while (digitalRead(BUTTON_PIN)==HIGH) {}
+  for(int i=0; i<strip.numPixels(); i++) { // For each pixel in strip...
+    strip.setPixelColor(i, strip.Color(255,   0,   0));         //  Set pixel's color (in RAM)
+    strip.show();                          //  Update strip to match
+    delay(100);
   }
-  if(pixel>0){
-    for(int i=0; i<strip.numPixels(); i++) { // For each pixel in strip...
-      if(i == pixel-1){
-        strip.setPixelColor(i, color);         //  Set pixel's color (in RAM)
-      }
-      else{
-        strip.setPixelColor(i, strip.Color(0,0,0));         //  Set pixel's color (in RAM) 
-      }
-      strip.show();                          //  Update strip to match
-    }    
+  while (digitalRead(BUTTON_PIN)==HIGH) {}
+  for(int i=(strip.numPixels()+1); i>0; i--) { // For each pixel in strip...
+    strip.setPixelColor((i-1), strip.Color(0,   0,   0));         //  Set pixel's color (in RAM)
+    strip.show();                          //  Update strip to match
+    delay(100);
   }
-  
-//  delay(10);
-}
+  }
+
+
+// Some functions of our own for creating animated effects -----------------
+
+// Fill strip pixels one after another with a color. Strip is NOT cleared
+// first; anything there will be covered pixel by pixel. Pass in color
+// (as a single 'packed' 32-bit value, which you can get by calling
+// strip.Color(red, green, blue) as shown in the loop() function above),
+// and a delay time (in milliseconds) between pixels.
