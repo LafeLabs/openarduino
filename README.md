@@ -12,6 +12,7 @@ This class is itself a self-replicating open source document.  In the class you 
  - [class 2: blinking-lights-2/](class2-blinking-lights-2/)
  - [class 3: buttons, knobs, serial, digital input/output](class3-buttons-knobs-io/)
  - [class 4: neopixels](class4-neopixels/)
+ - [class 5: motors/](class5-motors/)
  - class 5: sensors
  - class 6 robotics and motor controllers
  - 7 connecting the dots: sensors, neopixels, buttons, knobs, begin product creation process
