@@ -13,8 +13,7 @@ This class is itself a self-replicating open source document.  In the class you 
  - [class 3: buttons, knobs, serial, digital input/output](class3-buttons-knobs-io/)
  - [class 4: neopixels](class4-neopixels/)
  - [class 5: motors/](class5-motors/)
- - class 5: sensors
- - class 6 robotics and motor controllers
+ - [class 6: accelerometers](class6-sensors/)
  - 7 connecting the dots: sensors, neopixels, buttons, knobs, begin product creation process
  - 8 some trash assembly methods, further product discussion
  - 9 build teams, make designs

@@ -1,10 +1,41 @@
 ## [../](../)
 
-# Sensors
+# Sensors: Acceleromters
+
+
 
 We will learn to read out from the Adafruit accelerometer, and then learn to do things with the data, to respond to motions. 
 
+What is an accelerometer?
+
+Accelerometers measure acceleration.  Acceleration can be from moving, where velocity is increasing, decreasing or changing direction, or it can be from the constant effective acceleration of gravity.
+
+![](images/equivalence.png)
+
+
+![](https://cdn-shop.adafruit.com/970x728/2809-08.jpg)
+[link to adafruit page about product](https://www.adafruit.com/product/2809)
+
 First install the library for the LIS3DH, go to tools then libraries, and search for the sensor name, then click on the Adafruit library and agree to install all the various dependent libraries.
+
+![](images/findlibrary.png)
+
+![](images/libraries.png)
+
+
+This is a chip which uses the [I2C protocol(wikipedia link)](https://en.wikipedia.org/wiki/I%C2%B2C).  This has four connections: power, ground, clock and data.  
+
+We want to take power from the 5 volt output on the Arduino and connect it to Vin on the board.  SDA is data, SCL is clock.  Be careful and make sure all the pins are right!
+
+Connect from the shield board to the sensor using jumpers as shown:
+
+![](images/boardcloseup.jpg)
+![](images/i2ccloseup.jpg)
+![](images/uno-and-board.jpg)
+
+Then duct tape it to a cardboard board or similar stick-like object to have an object to wave around.
+
+![](images/finalassembly.jpg)
 
 Then open the example program acceldemo and upload it, and look at the sensor data over hte serial.
 
@@ -63,5 +94,14 @@ void loop() {
 ```
 
 This is what we will work with in this class.  This is enough to build an incredible complexity of responses.  Everything we do here will be over serial, building responses to this information.
+
+
+Once again, this class is a collaborative process. Form teams as is convenient, work together, figure out how to detect something meaningful.  
+
+Goal: swish-flick. This is how you levitate things in Harry Potter.  Can we quantify a "swish" and a "flick"?  How do we detect it?  Possible demo: working levitation wand, with a motor controller which turns a winch which hoists an object.  
+
+![](images/feather.png)
+
+
 
 
