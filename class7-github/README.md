@@ -17,6 +17,8 @@ The default for human readable files on Github is the Markdown language, which i
  - talk about how this will all feed into our shared final project(Rube Goldberg!)
  - if we have even more time, 3d printer demo
 
+
+
 ##  Links
 
  - [wikipedia link about github](https://en.wikipedia.org/wiki/GitHub)
@@ -27,4 +29,5 @@ The default for human readable files on Github is the Markdown language, which i
  - [markdown guide](https://www.markdownguide.org/)
  - [markdown home](https://daringfireball.net/projects/markdown/)
 
+[![](https://imgs.xkcd.com/comics/git_2x.png)](https://xkcd.com/1597/)
 
