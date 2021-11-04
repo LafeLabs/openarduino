@@ -14,13 +14,8 @@ This class is itself a self-replicating open source document.  In the class you 
  - [class 4: neopixels](class4-neopixels/)
  - [class 5: motors/](class5-motors/)
  - [class 6: accelerometers](class6-sensors/)
- - 7 connecting the dots: sensors, neopixels, buttons, knobs, begin product creation process
- - 8 some trash assembly methods, further product discussion
- - 9 build teams, make designs
- - 10 prototype/build/test
- - 11 prototype/build/test
- - 12 prototype/build/test
-
+ - [class 7: github](class7-github/)
+ - ..final projects..
 
 ## Materials:
 
