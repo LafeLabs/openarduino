@@ -15,7 +15,7 @@ This class is itself a self-replicating open source document.  In the class you 
  - [class 5: motors/](class5-motors/)
  - [class 6: accelerometers](class6-sensors/)
  - [class 7: github](class7-github/)
- - ..final projects..
+ - [class 8: final projects](class8-finalprojects/)
 
 ## Materials:
 
