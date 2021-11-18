@@ -1,5 +1,7 @@
 ## [../](../)
 
+[example code](code/example-basic/)
+
 #  Final Projects: Open Source Hardware Product
 
 The most important thing about a technology product is not the technology or product it is what we deliver to our customer.
